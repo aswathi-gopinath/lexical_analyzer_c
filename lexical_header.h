@@ -1,0 +1,17 @@
+void header(FILE *fp);
+void comments(char temp, FILE *fp);
+void key_identifier(char temp, FILE *fp);
+void numeric_constant(char temp, FILE*fp);
+void float_constant(char float_buff[]);
+void hex_constant(char hex_buff[]);
+void binary_constant(char bin_buff[]);
+void octal_constant(char oct_buff[]);
+void char_literal(char temp, FILE*fp);
+void string_literal(char temp, FILE*fp);
+void symbols_print(char ch, char*open, char*close);
+void operators(char temp, FILE *fp);
+int iskeyword(char *buffer);
+int issymbols(char type);
+int single_operator(char op);
+int double_operator(char *buffer);
+void brace_error(char*open, char*close);
